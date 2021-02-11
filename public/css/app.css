@@ -36,3 +36,18 @@
   background-color: #B3E5FC;
 }
 
+main .box_pasta {
+  flex-wrap: wrap;
+}
+
+main .pasta {
+  width: calc(100% / 3);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main .pasta img {
+  width: 100%;
+}
+
