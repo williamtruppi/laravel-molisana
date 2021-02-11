@@ -43,15 +43,45 @@
 main{
 
   .box_pasta{
+    margin-top: 20px;
     flex-wrap: wrap;
+    padding: 0 20px;
   }
 
   .pasta{
-    width: calc(100% / 3);
-    height: fit-content;
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 10px;
+    position: relative;
+
+    .overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: white, $alpha: 0.7);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+
+      h3{
+        width: fit-content;
+      }
+    }
 
     img{
+      height: 100%;
       width: 100%;
     }
+  }
+
+  .pasta:hover .overlay {
+      display: block;
+  }
+
+  .pasta:not(:nth-of-type(3n)) {
+    margin-right: 10px;
+  }
+
+  .pasta:nth-of-type(3n) {
+      float: right;
   }
 }
