@@ -1,4 +1,5 @@
 @extends('layouts.app')
 @section('title')
-    HomePage
+    Contatti
 @endsection
+ciao belli
