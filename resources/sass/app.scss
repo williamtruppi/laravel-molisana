@@ -7,10 +7,6 @@
   font-family: 'Teko', sans-serif;
 }
 
-main{
-  background-color: #DAEDF3;
-}
-
 /* classi utility */
 
 .d-flex{
@@ -50,6 +46,8 @@ main{
 }
 
 main{
+
+  background-color: #DAEDF3;
 
   section{
      margin-top: 20px;
@@ -110,5 +108,25 @@ main{
 
   .pasta:nth-of-type(3n) {
       float: right;
+  }
+}
+
+footer{
+  padding-top: 50px;
+
+  .footer_column{
+    min-width: calc(100% / 4);
+    flex-direction: column;
+    font-size: 20px;
+    color:#001942;
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      color:#001942;
+      text-decoration: none;
+    }
   }
 }
