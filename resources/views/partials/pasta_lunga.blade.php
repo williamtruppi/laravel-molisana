@@ -1,16 +1,22 @@
-{{-- apertura box_pasta --}}
-    <div class="box_pasta d-flex">
-      {{-- apertura pasta --}}
-      @foreach ($data as $pasta)
-        @if ($pasta["tipo"] === "lunga")
-          <div class="pasta">
-            <div class="overlay d-flex">
-              <h3>{{ $pasta["titolo"] }}</h3>
+<section class="pasta_lunga">
+  
+  <h1>LE LUNGHE</h1>
+
+  {{-- apertura box_pasta --}}
+      <div class="box_pasta d-flex">
+        {{-- apertura pasta --}}
+        @foreach ($data as $pasta)
+          @if ($pasta["tipo"] === "lunga")
+            <div class="pasta">
+              <div class="overlay d-flex">
+                <h3>{{ $pasta["titolo"] }}</h3>
+              </div>
+              <img src="{{ $pasta["src"] }}" alt="">
             </div>
-            <img src="{{ $pasta["src"] }}" alt="">
-          </div>
-        @endif
-      @endforeach
-      {{-- chiusura pasta --}}
-    </div>
-{{-- chiusura box_pasta --}}
+          @endif
+        @endforeach
+        {{-- chiusura pasta --}}
+      </div>
+  {{-- chiusura box_pasta --}}
+
+</section>

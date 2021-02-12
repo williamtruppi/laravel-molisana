@@ -5,6 +5,10 @@
   font-family: "Teko", sans-serif;
 }
 
+main {
+  background-color: #DAEDF3;
+}
+
 /* classi utility */
 
 .d-flex {
@@ -36,6 +40,21 @@
   background-color: #B3E5FC;
 }
 
+.active {
+  background-color: #B3E5FC;
+}
+
+main section {
+  margin-top: 20px;
+}
+
+main section h1 {
+  text-align: center;
+  color: #001942;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
 main .box_pasta {
   margin-top: 20px;
   flex-wrap: wrap;
@@ -55,6 +74,7 @@ main .pasta .overlay {
   background-color: rgba(255, 255, 255, 0.7);
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -62,6 +82,9 @@ main .pasta .overlay h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: #001942;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 main .pasta img {
@@ -70,7 +93,7 @@ main .pasta img {
 }
 
 main .pasta:hover .overlay {
-  display: block;
+  display: flex;
 }
 
 main .pasta:not(:nth-of-type(3n)) {

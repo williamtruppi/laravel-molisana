@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
-
-Route::get('welcome', function () {
-    return view('welcome');
-});
+})->name("welcome");;
 
 Route::get('prodotti', function () {
     
@@ -147,8 +143,8 @@ Route::get('prodotti', function () {
     ];
 
     return view('prodotti', compact("data"));
-});
+})->name("prodotti");
 
 Route::get('contatti', function () {
     return view('contatti');
-});
+})->name("contatti");;

@@ -1,9 +1,14 @@
 //
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Teko', sans-serif;
+}
+
+main{
+  background-color: #DAEDF3;
 }
 
 /* classi utility */
@@ -40,7 +45,22 @@
   }
 }
 
+.active {
+    background-color: #B3E5FC;
+}
+
 main{
+
+  section{
+     margin-top: 20px;
+
+    h1{
+      text-align: center;
+      color: #001942;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
 
   .box_pasta{
     margin-top: 20px;
@@ -60,10 +80,14 @@ main{
       background-color: rgba($color: white, $alpha: 0.7);
       display: none;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
 
       h3{
         width: fit-content;
+        color: #001942;
+        font-weight: 400;
+        font-size: 2rem;
       }
     }
 
@@ -71,10 +95,13 @@ main{
       height: 100%;
       width: 100%;
     }
+
   }
 
-  .pasta:hover .overlay {
-      display: block;
+  .pasta:hover {
+      .overlay{
+        display: flex;
+      }
   }
 
   .pasta:not(:nth-of-type(3n)) {
