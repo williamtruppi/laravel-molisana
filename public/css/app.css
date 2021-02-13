@@ -125,6 +125,7 @@ main .info_box p strong {
 main .single_product {
   width: 100%;
   background-color: #B7DAE5;
+  padding: 30px;
 }
 
 main .single_product img {
@@ -133,12 +134,7 @@ main .single_product img {
 
 main .single_product .info_grid {
   flex-wrap: wrap;
-}
-
-main .single_product .info_grid p {
-  font-size: 1.5rem;
-  font-family: "Playfair Display", serif;
-  color: #092C74;
+  margin-bottom: 30px;
 }
 
 main .single_product .info_grid .info_grid_card:nth-of-type(3n + 2) {
@@ -166,6 +162,15 @@ main .single_product .info_grid .info_grid_card h2 {
 
 main .single_product .info_grid .info_grid_card img {
   width: 65%;
+}
+
+main .single_product p,
+main .single_product ul,
+main .single_product li,
+main .single_product #text {
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  color: #092C74;
 }
 
 footer {

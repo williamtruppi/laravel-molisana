@@ -28,8 +28,8 @@
                 <div class="info_grid_card d-flex">
                     <h2>{{$prodotto["peso"]}}</h2>
                 </div>
-                <p>{{$prodotto["descrizione"]}}</p>
             </div>
+            <p>{!!$prodotto["descrizione"]!!}</p>
         </div>
     </div>
 
