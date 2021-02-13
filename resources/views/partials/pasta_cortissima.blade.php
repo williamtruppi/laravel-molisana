@@ -5,11 +5,11 @@
   {{-- apertura box_pasta --}}
       <div class="box_pasta d-flex">
         {{-- apertura pasta --}}
-        @foreach ($data as $pasta)
+        @foreach ($data as $key => $pasta)
           @if ($pasta["tipo"] === "cortissima")
             <div class="pasta">
               <div class="overlay d-flex">
-                <h3>{{ $pasta["titolo"] }}</h3>
+                <a href="prodotti/{{$key}}"><h3>{{ $pasta["titolo"] }}</h3></a>
               </div>
               <img src="{{ $pasta["src"] }}" alt="">
             </div>

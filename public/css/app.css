@@ -16,6 +16,8 @@
   margin: 0 auto;
 }
 
+/* ------------------------------- */
+
 .navtop {
   justify-content: center;
 }
@@ -40,11 +42,10 @@
   background-color: #B3E5FC;
 }
 
-main {
+main .lista_prodotti {
   margin-top: 20px;
   padding: 30px 0;
   background-color: #DAEDF3;
-  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
 
 main section h1 {
@@ -119,6 +120,52 @@ main .info_box p {
 
 main .info_box p strong {
   width: calc(100% / 2);
+}
+
+main .single_product {
+  width: 100%;
+  background-color: #B7DAE5;
+}
+
+main .single_product img {
+  width: 100%;
+}
+
+main .single_product .info_grid {
+  flex-wrap: wrap;
+}
+
+main .single_product .info_grid p {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  color: #092C74;
+}
+
+main .single_product .info_grid .info_grid_card:nth-of-type(3n + 2) {
+  border-left: 1px solid #092C74;
+  border-right: 1px solid #092C74;
+}
+
+main .single_product .info_grid .info_grid_card {
+  width: calc(100% / 3);
+  border-bottom: 1px solid #092C74;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+}
+
+main .single_product .info_grid .info_grid_card h2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 400;
+  color: #092C74;
+  font-size: 2.4rem;
+}
+
+main .single_product .info_grid .info_grid_card img {
+  width: 65%;
 }
 
 footer {
